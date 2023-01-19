@@ -31,13 +31,25 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
+=======
+    'projects.apps.ProjectsConfig',
+    'rest_framework',
+>>>>>>> test
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
 ]
+=======
+    'users.apps.UsersConfig',
+    ]
+    
+AUTH_USER_MODEL = 'users.CustomUser'
+>>>>>>> test
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
