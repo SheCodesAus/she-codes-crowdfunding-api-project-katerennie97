@@ -28,7 +28,7 @@ class CustomUserDetail(APIView):
             raise Http404
                 
     def get(self,request,pk):
-        user = self.get.object(pk)
+        user = self.get_object(pk)
         serializer = CustomUserSerializer(user)
         return Response(serializer.data)
 
